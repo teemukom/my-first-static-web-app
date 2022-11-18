@@ -19,7 +19,7 @@
   <script>
 >>>>>>> a9fe6b0 (change index)
     (async function() {
-        const { text } = await( await fetch(`/api/message`)).json();
+        const { text } = await( await fetch(`/api/testing`)).json();
         document.querySelector('#name').textContent = text;
     }());
     </script>
