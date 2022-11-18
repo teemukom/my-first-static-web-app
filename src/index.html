@@ -15,7 +15,7 @@
   
   <script>
         (async function () {
-            let response = await fetch(`/api/message`);
+            let response = await fetch(`/api/testing`);
             let data = await response.text();
             console.log(data);
             document.querySelector('#apiresponse').textContent = data;
