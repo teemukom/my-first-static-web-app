@@ -12,6 +12,15 @@
   <main>
     <h1>Vanilla JavaScript App</h1>
   </main>
+  
+  <script>
+        (async function () {
+            let response = await fetch(`/api/message`);
+            let data = await response.text();
+            console.log(data);
+            document.querySelector('#apiresponse').textContent = data;
+        }())
+    </script>
 </body>
 
 </html>
